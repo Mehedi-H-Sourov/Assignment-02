@@ -9,6 +9,10 @@
 }
 
 /* ---------------------------shared styles------------------------------ */
+html {
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +34,10 @@ header {
     padding: 12px 40px 12px 30px;
     border-radius: 10000px;
     background-image: linear-gradient(to bottom right, purple, rgb(255, 0, 153), yellow);
+}
+
+.font-color {
+    color: #FFFFFF
 }
 
 /* -----------------------------nav bar --------------------------------*/
@@ -66,6 +74,236 @@ nav {
 
 /* ------------------------Banner----------------------------------- */
 .banner-container {
+    max-width: 1600px;
+    max-height: 760px;
     background-image: url(../assets/hero-bg.png);
-    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-circle {
+    width: 350px;
+    height: 350px;
+}
+
+.img-microphone {
+    width: 200px;
+    height: 200px;
+}
+
+/* --------Banner Content */
+.banner-content h1 {
+    color: #FFFFFF;
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+.banner-content {
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-content h1 {
+    margin-top: 2.5rem;
+
+}
+
+.banner-content p {
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner-content button {
+    margin-bottom: 6.5rem;
+}
+
+
+.banner-content .btn-2 {
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 12px 20px 12px 48px;
+    border-radius: 10000px;
+    margin-left: 1rem;
+}
+
+/* -------------------------About section--------------------------- */
+.about {
+    background-color: #1A0B2E;
+    text-align: center;
+
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.about p {
+    line-height: 1.25rem;
+    padding-bottom: 5rem;
+}
+
+.about hr {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About -- card-info ------------------------------------------------------- */
+.card-container {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.card-container .card-info h1 {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.card-container .card-info p {
+    color: #ffffff78;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+/* ------------------------------------Why section--------------------------------------- */
+.why-container {
+    background-color: #230E3D;
+}
+
+
+.why-boxes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.8rem;
+}
+
+.why-container h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 7.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.why-boxes .box-1 {
+    grid-row: 4 span;
+    grid-column: 2 span;
+
+}
+
+.why-boxes .box-2 {
+    grid-row: 2 span;
+    grid-column: 4 span;
+}
+
+.why-boxes .box-3 {
+    grid-row: 2 span;
+    grid-column: 4 span;
+}
+
+.why-boxes .box-4 {
+    grid-row: 2 span;
+    grid-column: 4 span;
+}
+
+.why-boxes .box-5 {
+    grid-row: 2 span;
+    grid-column: 2 span;
+}
+
+/* .box-4, .box-5 {
+    padding-bottom: 30px;
+    margin-bottom: 120px;
+} */
+
+.boxes {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+
+}
+
+.boxes img {
+    padding-top: 3.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.boxes h5 {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.boxes p {
+    font-size: 1rem;
+    color: #ffffff80;
+    line-height: 1.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: left;
+
+}
+
+
+/* ------------------------Episodes/Youtube--------------- */
+.episodes {
+    background-color: #1A0B2E;
+}
+
+.episodes-container {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.episodes h2 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.video-description {
+    background-color: #250D44;
+
+}
+
+.video-description h4 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px 24px;
+}
+
+.video-description p {
+    color: #ffffff60;
+    padding: 0 24px 60px;
+
+}
+.video-description h6 {
+    color: #00FF88;
+    padding: 0 24px 60px;
 }
