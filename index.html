@@ -32,15 +32,19 @@
         </nav>
 
         <section class="banner-container">
-            <div class="img-container">
-                <img class="img-circle" src="./assets/hero-circle.png" alt="hero-circle">
-                <img class="img-microphone" src="./assets/microphone.png" alt="microphone">
-            </div>
-            <div class="banner-content">
-                <h1>TechWave</h1>
-                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                <button class="btn"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
-                <Button class="btn-2"><i class="fa-regular fa-envelope"></i> Subscribe</Button>
+
+            <div class="banner-inner">
+                <div class="img-container">
+                    <img class="circle" src="./assets/hero-circle.png" alt="hero-circle">
+                    <img class="icon" src="./assets/microphone.png" alt="microphone">
+                </div>
+
+                <div class="banner-content">
+                    <h1>TechWave</h1>
+                    <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <button class="btn"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                    <button class="btn-2"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                </div>
             </div>
 
         </section>
@@ -109,7 +113,7 @@
             </div>
 
             <div class="boxes box-4">
-                <img src="./assets/device.png" alt="">
+                <img src="./assets/storm.png" alt="">
                 <h5>Exclusive Interviews</h5>
                 <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures
                     exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and
@@ -131,11 +135,13 @@
         <h2>Featured Episodes</h2>
         <div class="episodes-container">
             <div class="video-card">
-                <iframe width="380" height="214" src="https://www.youtube.com/embed/uFIu0Ah7iXY?si=GyxcomldmNHqWPMB"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> The Future of AI in Everyday
-                    Life</iframe>
+                <div class="video-clip">
+                    <iframe width="380" height="214" src="https://www.youtube.com/embed/uFIu0Ah7iXY?si=GyxcomldmNHqWPMB"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> The Future of AI in Everyday
+                        Life</iframe>
+                </div>
                 <div class="video-description">
                     <h4>The Future of AI in Everyday
                         Life</h4>
@@ -175,14 +181,29 @@
                     <h6><i class="fa-solid fa-clock"></i> 42 min</h6>
                 </div>
             </div>
-
-
         </div>
 
         <div class="Host">
             <h2>Meet The Host</h2>
 
-            <div class="Host-content">
+            <div class="host-content">
+                <div class="host-img">
+                    <img src="./assets/host.png" alt="">
+                </div>
+                <div>
+                    <h4>Alex Kumar</h4>
+                    <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry
+                        for
+                        over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares
+                        insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                    <div class="social-icons">
+                        <img src="./assets/linkedin.png" alt="linkedIn logo">
+                        <img src="./assets/x.png" alt="Twitter Logo">
+                        <img src="./assets/instagram.png" alt="Instagram Logo">
+                        <img src="./assets/youtube.png" alt="Youtube Logo">
+
+                    </div>
+                </div>
 
 
             </div>
@@ -190,6 +211,33 @@
         </div>
 
     </section>
+
+    <footer>
+        <div class="footer-content">
+
+            <h1><span class="Tech">Tech</span><span class="Wave">Wave</span></h1>
+            <div class="footer-icons">
+                <div class="spotify">
+                    <img src="./assets/spotify.png" alt="spotify">
+                    <p>Spotify</p>
+                </div>
+                <div class="apple">
+                    <img src="./assets/apple-podcast.png" alt="apple">
+                    <p>Apple Podcasts</p>
+                </div>
+                <div class="youtube">
+                    <img src="./assets/youtube-podcast.png" alt="youtube">
+                    <p>Youtube</p>
+                </div>
+                <div class="twitter">
+                    <img src="./assets/twitter.png" alt="twitter">
+                    <p>Twitter</p>
+                </div>
+            </div>
+            <p style="color: #ffffff60;"><small>© 2026 TechWave Podcast. All rights reserved.</small></p>
+
+        </div>
+    </footer>
 
 
 
