@@ -115,6 +115,22 @@ nav {
     transform: translateX(-50%);
 }
 
+.badge {
+    background-color: #00FF88;
+    border-radius: 1000px;
+    box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
+    position: absolute;
+    top: 200px;
+    right: 600px;
+    z-index: 20;
+}
+.badge h5 {
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+}
+
 
 /* --------Banner Content */
 .banner-content h1 {
