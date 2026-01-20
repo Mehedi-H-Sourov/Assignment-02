@@ -38,6 +38,7 @@ header {
     padding: 12px 40px 12px 30px;
     border-radius: 10000px;
     background-image: linear-gradient(to bottom right, purple, rgb(255, 0, 153), yellow);
+    cursor: pointer;
 }
 
 .font-color {
@@ -184,17 +185,53 @@ nav {
     padding: 12px 40px 12px 30px;
     border-radius: 10000px;
     background-image: linear-gradient(to bottom right, purple, rgb(255, 0, 153), yellow);
+    cursor: pointer;
+}
+
+/* animation */
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-2:hover {
+    animation: anim 1.5s infinite;
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+
+}
+
+.btn-3:hover {
+    animation: up 1.5s forwards;
 }
 
 .banner-content .btn-3 {
     border: 1px solid #00FF88;
     color: #00FF88;
     background-color: transparent;
-
     font-weight: 600;
     padding: 12px 20px;
     border-radius: 10000px;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 /* -------------------------About section--------------------------- */
@@ -461,13 +498,7 @@ iframe {
 
 
 /* ----------------------Footer------------- */
-/* footer {
-    background-image: url(../assets/footer-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    height: 412px;
-} */
+
 footer {
     width: 100%;
     max-width: 1600px;
@@ -485,7 +516,7 @@ footer {
     justify-content: center;
 }
 
-footer span {
+.footer-icons span {
     color: #ffffff60;
     margin-right: 1rem;
 
@@ -507,11 +538,6 @@ footer p {
     padding-bottom: 7.5rem;
     margin-top: 10px;
 }
-
-/* .spotify img {
-    padding-top: 10px;
-    padding-left: 4rem;
-} */
 
 /* ----------------------------------------MEDIA QUERY------------------------------------------------------------- */
 @media screen and (max-width:576px) {
@@ -607,7 +633,7 @@ footer p {
     }
 
     iframe {
-        width:100%;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -636,6 +662,8 @@ footer p {
         width: 90%;
         margin: 0 auto;
         justify-content: center;
+        padding-bottom: 2rem;
+
     }
 
     .host-content {
@@ -665,26 +693,36 @@ footer p {
     }
 
     .footer-icons {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        gap: 1rem;
+        justify-items: flex-start;
+        gap: 10px;
+        margin-left: 2rem;
     }
 
-    /* .footer-icons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2.5rem;
-        padding-bottom: 2rem;
+    .footer-content h1 {
+        font-size: 2rem;
+        padding-top: 2rem;
     }
 
-    .spotify,
-    .apple,
-    .twitter,
-    .youtube {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
+    .footer-icons span>img {
+        margin-right: 10px;
+    }
 
-    } */
+    .footer-icons span {
+        color: #FFFFFF;
+    }
+
+
+    footer p {
+        color: #FFFFFF;
+        font-size: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
 }
+
+
+/* -----------------------------For large screen------------------------------------------ */
+@media screen and (min-width:992px) {}
