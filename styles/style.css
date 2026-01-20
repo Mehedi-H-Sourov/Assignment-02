@@ -188,41 +188,6 @@ nav {
     cursor: pointer;
 }
 
-/* animation */
-
-@keyframes anim {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.btn-2:hover {
-    animation: anim 1.5s infinite;
-}
-
-@keyframes up {
-    from {
-        transform: translateY(0);
-    }
-
-    to {
-        transform: translateY(-15px);
-    }
-
-}
-
-.btn-3:hover {
-    animation: up 1.5s forwards;
-}
-
 .banner-content .btn-3 {
     border: 1px solid #00FF88;
     color: #00FF88;
@@ -282,6 +247,7 @@ nav {
 /* ------------------------------------Why section--------------------------------------- */
 .why-container {
     background-color: #230E3D;
+    padding: 4rem 1rem;
 }
 
 
@@ -333,16 +299,12 @@ nav {
 
 }
 
-/* .box-4, .box-5 {
-    padding-bottom: 30px;
-    margin-bottom: 120px;
-} */
-
 .boxes {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 2.5rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border: none;
+    padding: 2rem;
 
 }
 
@@ -539,6 +501,42 @@ footer p {
     margin-top: 10px;
 }
 
+/* animation */
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+
+}
+
+.btn-2:hover {
+    animation: anim 1.5s infinite;
+}
+
+.btn-3:hover {
+    animation: up 1.5s forwards;
+}
+
+
 /* ----------------------------------------MEDIA QUERY------------------------------------------------------------- */
 @media screen and (max-width:576px) {
     section {
@@ -594,6 +592,10 @@ footer p {
 
     .about hr {
         width: 85%;
+    }
+
+    .about h2 {
+        font-size: 2rem;
     }
 
     .card-container {
@@ -723,6 +725,29 @@ footer p {
     }
 }
 
+@media (min-width: 577px) and (max-width:992px) {
+    .about p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-/* -----------------------------For large screen------------------------------------------ */
-@media screen and (min-width:992px) {}
+    .card-container {
+        max-width: 1200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+    }
+    .episodes-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
