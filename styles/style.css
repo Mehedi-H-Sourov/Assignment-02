@@ -221,6 +221,7 @@ nav {
 .about hr {
     max-width: 1200px;
     margin: 0 auto;
+    border: 1px solid #ffffff11;
 }
 
 /* About -- card-info ------------------------------------------------------- */
@@ -441,16 +442,15 @@ iframe {
 
 }
 
-.social-icons img {
-
+.s-icon {
     width: 40px;
     height: 40px;
-    padding: 10px;
-    display: block;
     border: 1px solid #533C72;
     border-radius: 50%;
-    border: 1px solid #533C72;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
     margin-bottom: 2rem;
 }
 
@@ -743,6 +743,7 @@ footer p {
         flex-wrap: wrap;
         justify-items: center;
     }
+
     .episodes-container {
         width: 100%;
         display: flex;
